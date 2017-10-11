@@ -1,0 +1,20 @@
+<h4>This is a new version of the RestExample code that is refactored to make the last-fm module self contained.  In other words, the components and associated routing have been moved
+  from AppModule to LastFmModule.  </h4>
+  <hr/>
+  Here are the key points:
+  <ul>
+    <li>Moved the views directory containing artists, tracks, and artist-popup components under the last-fm module</li>
+    <li>Removed all references to the components and there associated dependencies from AppModule and added to LastFmModule</li>
+    <li>Removed import of last-fm module from app.module (using lazy-loading)</li>
+    <li>Added routing to LastFmModule  to route internally to all pages within the module</li>
+    <li>Added a home component to AppModule (not necessary, but I wanted a place to put this)</li>
+    <li>Added a route for home component, and added it to the menu in app.component</li>
+    <li>Changed AppRoutingModule to create a route lastfm that lazy loads the LastFmModule and then uses it's routing table beneath that level</li>
+    <li>Changed menu for artist and track to point to the new routes /lastfm/artist instead of /artist</li>
+  </ul>
+  <hr/>
+  <h4>So now the app knows nothing about any of the code related to lastfm or its display pages.  It simply knows that when a user tries to go to any route that starts with 
+    /lastfm that it should lazy load the lastfm module and turn routing over to it.  The lastfm module takes care of everything related to those components, the service, etc.
+    It can be removed by simply removing the route.  None of the module code will load until someone tries to go to the route, so if they never do, the overhead is not there.
+    Once they go to the route, the module is loaded and will remain loaded.
+  </h4>

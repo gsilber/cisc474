@@ -1,0 +1,31 @@
+<div [hidden]="tracks.length==0">
+  <h2>Top {{attributes.perPage}} Tracks on Last.FM</h2>
+  <table>
+    <thead>
+    <th>Position</th><th>Track</th><th>Artist</th>
+  </thead>
+    <template ngFor let-track [ngForOf]="tracks" let-index="index">
+    <tr  (click)='showDetail(index,track)' class="clickable" >
+      <td>
+    {{index+1}}</td><td> {{track.name}}</td><td>{{track.artist.name}}</td>
+    </tr>
+    <tr>
+      <td colspan=3 class='detail' [hidden]='index!=selectedTrack'>
+        <div class='col-sm-9'>
+            <div class="col-sm-4">
+          <img src='{{track.image[2]["#text"]}}' >
+          </div>  
+          <div class="col-sm-8">
+          <h2>{{track.name}}</h2>
+          <h4>PlayCount: {{track.playcount}}</h4>
+          <h4><a href='{{track.url}}' target='_new'>Last.Fm Webpage</a></h4>
+        </div>
+        </div>
+      </td>
+    </tr>
+  </template>
+  </table>
+  <br/>&nbsp;
+  </div>
+  
+  

@@ -1,0 +1,22 @@
+<div class='headerHighlight' [hidden]='projects&&projects.length!=0'>
+    No projects found.
+  </div>
+  <table [hidden]='!projects||projects.length==0'class="table-striped table">
+    <thead>
+      <tr class='row'>
+        <th class='col-md-1'>Name</th>
+        <th class='col-md-3'>Members</th>
+        <th class='col-md-2'>Project Name</th>
+        <th class='col-md-3'>Project Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr (click)='goUrl(project.project_url)' class='row' 
+      *ngFor='let project of projects;let i=index' [title]=project.project_description>
+      <td>{{project.team}}</td>
+      <td><div *ngFor='let member of project.members'>{{member}}</div></td>
+      <td>{{project.project_name}}</td>
+      <td>{{project.project_description}}</td>
+    </tr>
+  </tbody>
+  </table>

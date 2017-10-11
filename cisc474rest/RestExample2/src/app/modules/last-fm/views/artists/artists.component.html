@@ -1,0 +1,16 @@
+ <div [hidden]="artists.length==0">
+<h2>Top {{attributes.perPage}} Artists on Last.FM</h2>
+<div class="container-fluid">
+<table class='table-responsive table'>
+  <thead>
+  <th>Position</th><th>Artist</th>
+</thead>
+  <tr *ngFor="let artist of artists;let i=index" (click)='showDetail(i,artist)' class="clickable" >
+    <td>
+  {{i+1}}</td><td> {{artist.name}}</td>
+  </tr>
+</table>
+</div>
+<br/>&nbsp;
+</div>
+

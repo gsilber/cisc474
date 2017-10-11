@@ -1,0 +1,30 @@
+{
+    "project1": [
+        {
+            "team": "Team #0",
+            "members": ["name1","name2","name3","name4"],
+            "project_name": "Game 1",
+            "project_description": "A good gameaskdjfjdhskdjhfksjdhdfkjsdhdkjfhskdjfhksjdhf\nasdkjflksdjlfkjsdlkfjlsdkjflksdjflskjdlf lsdkfjlsdkj sdlkfjlskdj sdkljflskdjf sdfkslfkjd",
+            "project_url": "http://cisc474.cis.udel.edu/kdksklk/dsdsdf.html"
+        },
+        {
+            "team": "Team #2",
+            "members": ["name1","name2","name3","name4"],
+            "project_name": "Game 2",
+            "project_description": "A good game",
+            "project_url": "http://game1.com"
+        },
+        {
+            "team": "Team #3",
+            "members": ["name1","name2","name3","name4"],
+            "project_name": "Game 3",
+            "project_description": "A good game",
+            "project_url": "http://game1.com"
+        }
+    ],
+    "project2":[
+    ],
+    "project3":[
+    ]
+  }
+  

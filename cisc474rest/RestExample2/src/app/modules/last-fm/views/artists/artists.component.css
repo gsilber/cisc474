@@ -1,0 +1,11 @@
+table th{
+    text-align: left;
+    font-size: large;
+    padding-right:20px;
+}
+
+
+.clickable:hover{
+    background:aqua;
+    cursor: pointer;
+}
