@@ -1,0 +1,127 @@
+
+
+#gameBoard{
+    width: 700px;    
+    height: 620px;
+    border-style:solid;
+    border-width:1px;
+    border-color:black;
+    margin:0;
+    padding:0;
+}
+#scoreBoard{
+    background: silver;
+    width: 680px;    
+    height: 80px;
+    margin:10px 10px;
+    position:relative;
+}
+#playBoard{
+    background:url('../images/halfField.jpg');
+    margin:10px 10px;
+    width:680px;
+    height:500px;
+    position:relative;
+}
+
+#futball{
+    position:absolute;
+    background:url('../images/futball.gif');
+    background-size:20px;
+    height:20px;
+    width:20px;
+    top:100px;
+    left:20px;
+}
+
+#goalie{
+    position:absolute;
+    background:url('../images/tinygoalie2.png');
+    height:60px;
+    width:25px;
+    top:68px;
+    right:0px;
+}
+
+#goalBox{
+    width:55px;
+    position:absolute;
+    top:150px;
+    right:25px;
+    bottom:162px;
+    border-style:solid;
+    border-width:5px;
+    border-color:white;
+    border-right:none;
+}
+
+#goaliebox{
+    width:10px;
+    position:absolute;
+    top:150px;
+    right:90px;
+    bottom:162px;
+}
+.Scores{
+    position:absolute;
+    margin:5px;
+    padding-right:70px;
+    font-weight:bold;
+    font-size:26px;
+    text-align:left;
+}
+.OutputText{
+    border:solid 1px black;
+    height:30px;
+    width:60px;
+    padding-right:5px;
+    text-align:right;
+    top:0px;
+    position:absolute;
+    right:0px;
+}
+#ShotsAttempted{
+    right:0;
+    top:0;
+}
+#ShotsMissed{
+    right:0;
+    bottom:0;
+}
+.Status{
+    position:absolute;
+    left:0px;
+    bottom:0px;
+    padding:3px;
+    font-weight:bold;
+    width:300px;
+    border-top:1px solid black;
+    border-right:1px solid black;
+    text-align:center;
+}
+.btnStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	font-size:20px;
+	color: #663300;
+	padding: 5px 30px;
+	margin:8px 70px;
+}
+
+.btnStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+
+.btnStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+
