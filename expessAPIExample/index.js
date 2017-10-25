@@ -1,6 +1,5 @@
-//const express = require('express'),  
-//app = express,
-const app=require('express')();
+const express = require('express'),  
+app = express(),
 logger = require('morgan'),
 config = require('./config/config'),
 router = require('./router');
